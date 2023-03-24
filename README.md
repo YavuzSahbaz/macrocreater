@@ -1,3 +1,9 @@
+![GitHub language count](https://img.shields.io/github/languages/count/YavuzSahbaz/macrocreater)
+![GitHub repo size](https://img.shields.io/github/repo-size/YavuzSahbaz/macrocreater)
+![Lines of code](https://img.shields.io/tokei/lines/github/YavuzSahbaz/macrocreater)
+![GitHub](https://img.shields.io/github/license/YavuzSahbaz/macrocreater)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/YavuzSahbaz/macrocreater)
+
 # macrocreater
  Reverse Shell Base64 PowerShell Payload Generator for Office Documents and Macros
 

@@ -14,7 +14,7 @@ This is a reverse shell payload generator written in Python by Yavuz Sahbaz. It 
 
 Run the program with the following command:
 
-python3 ysshellvba.py
+- `python3 ysshellvba.py`
 
 The script will ask for the following inputs:
 

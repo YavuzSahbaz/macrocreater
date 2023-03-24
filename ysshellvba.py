@@ -5,6 +5,7 @@
 import sys
 import base64
 def help():
+    print("python3 ysshellvba.py")
     print("USAGE:After input IP and PORT it will create automotic payload.txt file on same folder")
     print("Returns reverse shell PowerShell base64 encoded cmdline payload connecting to IP:PORT")
     exit()

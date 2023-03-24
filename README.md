@@ -28,7 +28,7 @@ To use the generated payload, embed it in an Office document or macro, and execu
 
 ## Requirements
 
-Python 3
+Python 3 
 Please note that using reverse shells in Office documents and macros can have legal and ethical implications. Use this script only for legitimate purposes and with proper authorization. Be aware of the potential risks and ensure you have appropriate permissions before using this tool.
 
 

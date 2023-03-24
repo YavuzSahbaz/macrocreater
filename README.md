@@ -10,7 +10,7 @@
 
 This is a reverse shell payload generator written in Python by Yavuz Sahbaz. It generates a PowerShell base64 encoded command-line payload that connects to a specified IP address and port.
 
-##Usage
+## Usage
 
 Run the program with the following command:
 
@@ -26,7 +26,7 @@ At the end, the script will ask if you want to print the content of "payload.txt
 
 To use the generated payload, embed it in an Office document or macro, and execute the document or macro on the target system. The target system will initiate a reverse shell connection to the specified IP and port.
 
-##Requirements:
+## Requirements
 
 Python 3
 Please note that using reverse shells in Office documents and macros can have legal and ethical implications. Use this script only for legitimate purposes and with proper authorization. Be aware of the potential risks and ensure you have appropriate permissions before using this tool.
